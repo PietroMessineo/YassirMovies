@@ -68,7 +68,6 @@ struct MovieDetailView: View {
 }
 
 enum MovieDetailTab: String {
-    case trailer = "Trailer"
     case cast = "Cast"
     case watch = "Watch"
     case none

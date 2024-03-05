@@ -20,8 +20,10 @@ struct HomeView: View {
                     if let movieEditorsChoice = tmdbManager.movieEditorsChoice {
                         CarouselView(spacing: 20, items: movieEditorsChoice.compactMap({ movieItem in
                             return CoverFlowItem(item: movieItem)
-                        })) { item in
-                            CarouselItemView(item: item)
+                        })) { movie in
+                            NavigationLink(destination: MovieDetailView(movieId: movie.item.id, posterImage: nil) ) {
+                                CarouselItemView(item: movie)
+                            }
                         }
                         .frame(height: 200)
                     }

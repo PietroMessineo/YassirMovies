@@ -27,13 +27,13 @@ struct DetailBackgroundView: View {
                         ProgressView()
                     })
                     .resizable()
-                    .frame(width: geometry.size.width, height: .infinity)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                     .blur(radius: 60)
                     .opacity(0.75)
             } else {
                 Image("placeholder")
                     .resizable()
-                    .frame(width: geometry.size.width, height: .infinity)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                     .blur(radius: 60)
                     .opacity(0.75)
             }

@@ -13,7 +13,7 @@ struct YassirMoviesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView(content: {
+            NavigationStack(root: {
                 HomeView()
             })
             .environmentObject(tmdbManager)
