@@ -43,6 +43,7 @@
 		CB8F8EEF2B97C1CC00D0F592 /* WatchProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EEE2B97C1CC00D0F592 /* WatchProviderView.swift */; };
 		CB8F8EF12B97C59300D0F592 /* CastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF02B97C59300D0F592 /* CastView.swift */; };
 		CB8F8EF42B97C93B00D0F592 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF32B97C93B00D0F592 /* PersonItemView.swift */; };
+		CB8F8EF62B97D06000D0F592 /* BackdropOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF52B97D06000D0F592 /* BackdropOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		CB8F8EEE2B97C1CC00D0F592 /* WatchProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchProviderView.swift; sourceTree = "<group>"; };
 		CB8F8EF02B97C59300D0F592 /* CastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastView.swift; sourceTree = "<group>"; };
 		CB8F8EF32B97C93B00D0F592 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
+		CB8F8EF52B97D06000D0F592 /* BackdropOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			children = (
 				CB8F8EC62B9783FC00D0F592 /* CarouselView.swift */,
 				CB8F8ECE2B978A1100D0F592 /* CarouselItemView.swift */,
+				CB8F8EF52B97D06000D0F592 /* BackdropOverlayView.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */,
 				CB8F8ED92B979DDC00D0F592 /* MovieItemView.swift in Sources */,
 				CB8F8EEF2B97C1CC00D0F592 /* WatchProviderView.swift in Sources */,
+				CB8F8EF62B97D06000D0F592 /* BackdropOverlayView.swift in Sources */,
 				CB8F8EB72B97569700D0F592 /* ImagesResponse.swift in Sources */,
 				CB8F8EDE2B97AA0600D0F592 /* MovieDetailView.swift in Sources */,
 				CB8F8EBD2B97792300D0F592 /* SearchResponse.swift in Sources */,
