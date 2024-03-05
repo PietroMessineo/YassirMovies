@@ -30,6 +30,9 @@
 		CB8F8ECC2B9787B800D0F592 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CB8F8ECB2B9787B800D0F592 /* Kingfisher */; };
 		CB8F8ECF2B978A1100D0F592 /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ECE2B978A1100D0F592 /* CarouselItemView.swift */; };
 		CB8F8ED12B978A5700D0F592 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ED02B978A5700D0F592 /* Date+Extension.swift */; };
+		CB8F8ED52B9798FA00D0F592 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ED42B9798FA00D0F592 /* MovieListView.swift */; };
+		CB8F8ED72B979DAD00D0F592 /* MovieThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ED62B979DAD00D0F592 /* MovieThumbnailView.swift */; };
+		CB8F8ED92B979DDC00D0F592 /* MovieItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ED82B979DDC00D0F592 /* MovieItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		CB8F8EC62B9783FC00D0F592 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		CB8F8ECE2B978A1100D0F592 /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
 		CB8F8ED02B978A5700D0F592 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CB8F8ED42B9798FA00D0F592 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		CB8F8ED62B979DAD00D0F592 /* MovieThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnailView.swift; sourceTree = "<group>"; };
+		CB8F8ED82B979DDC00D0F592 /* MovieItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +183,7 @@
 		CB8F8EA12B97523F00D0F592 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F8EC22B97813F00D0F592 /* HomeView.swift */,
+				CB8F8ED22B9798D900D0F592 /* Home */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -252,6 +258,25 @@
 				CB8F8ECE2B978A1100D0F592 /* CarouselItemView.swift */,
 			);
 			path = Carousel;
+			sourceTree = "<group>";
+		};
+		CB8F8ED22B9798D900D0F592 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F8ED32B9798DF00D0F592 /* Movie List */,
+				CB8F8EC22B97813F00D0F592 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CB8F8ED32B9798DF00D0F592 /* Movie List */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F8ED42B9798FA00D0F592 /* MovieListView.swift */,
+				CB8F8ED62B979DAD00D0F592 /* MovieThumbnailView.swift */,
+				CB8F8ED82B979DDC00D0F592 /* MovieItemView.swift */,
+			);
+			path = "Movie List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,13 +419,16 @@
 				CB8F8EC32B97813F00D0F592 /* HomeView.swift in Sources */,
 				CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */,
 				CB8F8EC12B977A1200D0F592 /* TmdbManager.swift in Sources */,
+				CB8F8ED72B979DAD00D0F592 /* MovieThumbnailView.swift in Sources */,
 				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,
 				CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */,
 				CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */,
+				CB8F8ED92B979DDC00D0F592 /* MovieItemView.swift in Sources */,
 				CB8F8EB72B97569700D0F592 /* ImagesResponse.swift in Sources */,
 				CB8F8EBD2B97792300D0F592 /* SearchResponse.swift in Sources */,
 				CB8F8ED12B978A5700D0F592 /* Date+Extension.swift in Sources */,
 				CB8F8ECF2B978A1100D0F592 /* CarouselItemView.swift in Sources */,
+				CB8F8ED52B9798FA00D0F592 /* MovieListView.swift in Sources */,
 				CB8F8EB52B97564800D0F592 /* DiscoverResponse.swift in Sources */,
 				CB8F8EC72B9783FC00D0F592 /* CarouselView.swift in Sources */,
 				CB8F8EAD2B97553500D0F592 /* JSONDecoder+Extension.swift in Sources */,

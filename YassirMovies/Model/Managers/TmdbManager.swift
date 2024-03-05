@@ -40,7 +40,7 @@ final class TmdbManager: ObservableObject {
         isLoading = true
         let discover = try await service.getDiscover(page: page, movieList: movieList)
         if let items = discover.results {
-            movieDiscoverList = items
+            movieDiscoverList.append(contentsOf: items)
         }
         isLoading = false
     }
