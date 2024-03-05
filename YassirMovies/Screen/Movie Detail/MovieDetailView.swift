@@ -41,8 +41,6 @@ struct MovieDetailView: View {
                 HStack {
                     HStack {
                         Spacer()
-                        ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .trailer)
-                        Spacer()
                         ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .cast)
                         Spacer()
                         ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .watch)
