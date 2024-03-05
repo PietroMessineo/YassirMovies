@@ -12,6 +12,7 @@ struct HomeView: View {
     
     @State var currentMovieList: DiscoverMovieList = .popular
     @State var currentPage: Int = 1
+    @State var showSearch: Bool = false
     
     var body: some View {
         ZStack {
@@ -49,10 +50,26 @@ struct HomeView: View {
             }
         }
         .navigationTitle("Discover")
+        .toolbar(content: {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "magnifyingglass.circle")
+                })
+                .foregroundStyle(Color.primary)
+                .font(.system(size: 25))
+            }
+        })
+        .sheet(isPresented: $showSearch, content: {
+            // TODO: - Implement Search
+        })
     }
 }
 
 #Preview {
-    HomeView()
-        .environmentObject(TmdbManager())
+    NavigationStack {
+        HomeView()
+            .environmentObject(TmdbManager())
+    }
 }
