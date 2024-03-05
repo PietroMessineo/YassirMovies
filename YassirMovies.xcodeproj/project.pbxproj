@@ -169,6 +169,7 @@
 		CB8F8EA32B97525900D0F592 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */,
 				CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */,
 			);
 			path = Entities;
@@ -186,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */,
-				CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
