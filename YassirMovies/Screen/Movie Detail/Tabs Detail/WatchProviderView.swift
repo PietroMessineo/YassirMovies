@@ -8,7 +8,7 @@
 import SwiftUI
 import Kingfisher
 
-struct MovieWatchView: View {
+struct WatchProviderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
     
     var body: some View {

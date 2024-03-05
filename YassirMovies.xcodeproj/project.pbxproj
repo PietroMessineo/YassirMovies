@@ -40,7 +40,9 @@
 		CB8F8EE62B97B21900D0F592 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EE52B97B21900D0F592 /* DetailHeaderView.swift */; };
 		CB8F8EE92B97B4E400D0F592 /* MovieDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EE82B97B4E400D0F592 /* MovieDetailInfoView.swift */; };
 		CB8F8EEC2B97B83C00D0F592 /* ButtonDetailTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EEB2B97B83C00D0F592 /* ButtonDetailTabView.swift */; };
-		CB8F8EEF2B97C1CC00D0F592 /* MovieWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EEE2B97C1CC00D0F592 /* MovieWatchView.swift */; };
+		CB8F8EEF2B97C1CC00D0F592 /* WatchProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EEE2B97C1CC00D0F592 /* WatchProviderView.swift */; };
+		CB8F8EF12B97C59300D0F592 /* CastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF02B97C59300D0F592 /* CastView.swift */; };
+		CB8F8EF42B97C93B00D0F592 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF32B97C93B00D0F592 /* PersonItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,7 +98,9 @@
 		CB8F8EE52B97B21900D0F592 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		CB8F8EE82B97B4E400D0F592 /* MovieDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailInfoView.swift; sourceTree = "<group>"; };
 		CB8F8EEB2B97B83C00D0F592 /* ButtonDetailTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDetailTabView.swift; sourceTree = "<group>"; };
-		CB8F8EEE2B97C1CC00D0F592 /* MovieWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWatchView.swift; sourceTree = "<group>"; };
+		CB8F8EEE2B97C1CC00D0F592 /* WatchProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchProviderView.swift; sourceTree = "<group>"; };
+		CB8F8EF02B97C59300D0F592 /* CastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastView.swift; sourceTree = "<group>"; };
+		CB8F8EF32B97C93B00D0F592 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,9 +350,19 @@
 		CB8F8EED2B97C1BB00D0F592 /* Tabs Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F8EEE2B97C1CC00D0F592 /* MovieWatchView.swift */,
+				CB8F8EF22B97C92900D0F592 /* Cast */,
+				CB8F8EEE2B97C1CC00D0F592 /* WatchProviderView.swift */,
 			);
 			path = "Tabs Detail";
+			sourceTree = "<group>";
+		};
+		CB8F8EF22B97C92900D0F592 /* Cast */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F8EF02B97C59300D0F592 /* CastView.swift */,
+				CB8F8EF32B97C93B00D0F592 /* PersonItemView.swift */,
+			);
+			path = Cast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,7 +514,7 @@
 				CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */,
 				CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */,
 				CB8F8ED92B979DDC00D0F592 /* MovieItemView.swift in Sources */,
-				CB8F8EEF2B97C1CC00D0F592 /* MovieWatchView.swift in Sources */,
+				CB8F8EEF2B97C1CC00D0F592 /* WatchProviderView.swift in Sources */,
 				CB8F8EB72B97569700D0F592 /* ImagesResponse.swift in Sources */,
 				CB8F8EDE2B97AA0600D0F592 /* MovieDetailView.swift in Sources */,
 				CB8F8EBD2B97792300D0F592 /* SearchResponse.swift in Sources */,
@@ -509,11 +523,13 @@
 				CB8F8ED52B9798FA00D0F592 /* MovieListView.swift in Sources */,
 				CB8F8EB52B97564800D0F592 /* DiscoverResponse.swift in Sources */,
 				CB8F8EC72B9783FC00D0F592 /* CarouselView.swift in Sources */,
+				CB8F8EF12B97C59300D0F592 /* CastView.swift in Sources */,
 				CB8F8EEC2B97B83C00D0F592 /* ButtonDetailTabView.swift in Sources */,
 				CB8F8EAD2B97553500D0F592 /* JSONDecoder+Extension.swift in Sources */,
 				CB8F8EB92B9778F500D0F592 /* PersonResponse.swift in Sources */,
 				CB8F8EDB2B97A28D00D0F592 /* PopularHeaderView.swift in Sources */,
 				CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */,
+				CB8F8EF42B97C93B00D0F592 /* PersonItemView.swift in Sources */,
 				CB8F8EBF2B97793200D0F592 /* WatchProvidersResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

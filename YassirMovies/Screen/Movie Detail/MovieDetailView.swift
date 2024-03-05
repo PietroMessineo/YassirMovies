@@ -29,9 +29,9 @@ struct MovieDetailView: View {
                             // Info related to release status and movie's duration
                             MovieDetailInfoView()
                         } else if selectedTab == .cast {
-                            
+                            CastView()
                         } else if selectedTab == .watch {
-                            MovieWatchView()
+                            WatchProviderView()
                         }
                     }
                 })
