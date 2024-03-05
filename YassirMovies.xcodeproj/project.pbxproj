@@ -17,6 +17,7 @@
 		CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */; };
 		CB8F8EAD2B97553500D0F592 /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EAC2B97553500D0F592 /* JSONDecoder+Extension.swift */; };
 		CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */; };
+		CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB22B97561200D0F592 /* TmdbService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbEndpoint.swift; sourceTree = "<group>"; };
 		CB8F8EAC2B97553500D0F592 /* JSONDecoder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Extension.swift"; sourceTree = "<group>"; };
 		CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorsChoiceResponse.swift; sourceTree = "<group>"; };
+		CB8F8EB22B97561200D0F592 /* TmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		CB8F8EA42B97525D00D0F592 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F8EB22B97561200D0F592 /* TmdbService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			files = (
 				CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */,
 				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,
+				CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */,
 				CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */,
 				CB8F8EAD2B97553500D0F592 /* JSONDecoder+Extension.swift in Sources */,
 				CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */,
