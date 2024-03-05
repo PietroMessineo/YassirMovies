@@ -25,6 +25,8 @@ struct HomeView: View {
                     .frame(height: 200)
                 }
                 
+                PopularHeaderView(currentMovieList: $currentMovieList)
+                
                 MovieListView(currentPage: $currentPage, currentMovieList: $currentMovieList)
             }
         }

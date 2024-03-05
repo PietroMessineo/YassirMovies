@@ -17,7 +17,7 @@ struct MovieListView: View {
     let gridSpacing: CGFloat = 10
     
     var body: some View {
-        // LazyVGrid instead of a List for ease of pagination
+        // LazyVGrid instead of a List for easy pagination
         LazyVGrid(columns: createGridColumns(itemsPerRow, gridSpacing), spacing: gridSpacing) {
             ForEach(0..<tmdbManager.movieDiscoverList.count, id: \.self) { index in
                 if index == tmdbManager.movieDiscoverList.count - 1 {

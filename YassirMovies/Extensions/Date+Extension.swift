@@ -25,4 +25,20 @@ extension Date {
             }
         }
     }
+    
+    func todaysFormattedDate() -> String {
+        let newDateFormatter = DateFormatter()
+        newDateFormatter.dateFormat = "yyyy-MM-dd"
+        let currentDateFormatted = newDateFormatter.string(from: self)
+        return currentDateFormatted
+    }
+    
+    func nextYearFormattedDate() -> String {
+        let newDateFormatter = DateFormatter()
+        var dateComponent = DateComponents()
+        dateComponent.year = 1
+        let oneYearLater = Calendar.current.date(byAdding: dateComponent, to: self)
+        let oneYearLaterFormatted = newDateFormatter.string(from: oneYearLater!)
+        return oneYearLaterFormatted
+    }
 }

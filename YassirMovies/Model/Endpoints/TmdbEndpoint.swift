@@ -22,7 +22,7 @@ extension TmdbEndpoint: Endpoint {
         switch self {
         case .editorsChoice:
             return nil
-        case .getMovieDetails(let id):
+        case .getMovieDetails:
             let region = Locale.current.region?.identifier
             return [
                 URLQueryItem(name: "region", value: region),
@@ -42,6 +42,8 @@ extension TmdbEndpoint: Endpoint {
             if movieList == .upcoming {
                 defaultQueries.append(URLQueryItem(name: "with_release_type", value: "3"))
                 defaultQueries.append(URLQueryItem(name: "sort_by", value: "popularity.desc"))
+                defaultQueries.append(URLQueryItem(name: "release_date.gte", value: Date().todaysFormattedDate()))
+                defaultQueries.append(URLQueryItem(name: "release_date.lte", value: Date().nextYearFormattedDate()))
             } else if movieList == .popular {
                 defaultQueries.append(URLQueryItem(name: "sort_by", value: "popularity.desc"))
             }
