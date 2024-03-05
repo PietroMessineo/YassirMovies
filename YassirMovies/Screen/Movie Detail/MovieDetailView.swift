@@ -25,8 +25,14 @@ struct MovieDetailView: View {
                     ScrollView {
                         // Poster + Title and Release Status
                         DetailHeaderView(shouldCollapse: $shouldCollapse, screenWidth: geometry.size.width, posterImage: posterImage)
-                        // Info related to release status and movie's duration
-                        MovieDetailInfoView()
+                        if selectedTab == .none {
+                            // Info related to release status and movie's duration
+                            MovieDetailInfoView()
+                        } else if selectedTab == .cast {
+                            
+                        } else if selectedTab == .watch {
+                            MovieWatchView()
+                        }
                     }
                 })
                 
