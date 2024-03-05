@@ -14,6 +14,7 @@
 		CB8F8E922B97520900D0F592 /* YassirMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E912B97520900D0F592 /* YassirMoviesUITests.swift */; };
 		CB8F8E942B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E932B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift */; };
 		CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA72B97528200D0F592 /* HTTPClient.swift */; };
+		CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CB8F8E912B97520900D0F592 /* YassirMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesUITests.swift; sourceTree = "<group>"; };
 		CB8F8E932B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB8F8EA72B97528200D0F592 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		CB8F8EA52B97526100D0F592 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */,
 				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,
 				CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */,
 			);
@@ -485,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,6 +518,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
