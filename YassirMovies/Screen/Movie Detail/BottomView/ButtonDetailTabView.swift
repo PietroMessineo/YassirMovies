@@ -17,8 +17,11 @@ struct ButtonDetailTabView: View {
     var body: some View {
         Button(action: {
             withAnimation {
+                // Haptic feedback
                 impactFeedbackgenerator.prepare()
                 impactFeedbackgenerator.impactOccurred()
+                
+                // Make sure the tab select or deselect to come back to default state
                 if selectedTab == currentTab {
                     selectedTab = .none
                     shouldCollapse = false

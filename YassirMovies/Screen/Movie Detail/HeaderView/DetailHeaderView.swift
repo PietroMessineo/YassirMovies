@@ -12,6 +12,7 @@ struct DetailHeaderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
     @Binding var shouldCollapse: Bool
     
+    // Screen width which is passed from GeometryReader is being used for calculate dynamically the horizontal spacing
     let screenWidth: CGFloat
     let posterImage: KFImage?
     
