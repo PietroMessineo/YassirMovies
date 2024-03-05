@@ -19,4 +19,8 @@ struct TmdbService: HTTPClient {
             endpoint: TmdbEndpoint.getMovieDiscover(page: page, movieList: movieList), responseModel: DiscoverResponse.self, decoder: .customDateDecoder
         )
     }
+    
+    func getImages(movieId: String) async throws -> ImagesResponse {
+        return try await request(endpoint: TmdbEndpoint.getImages(movieId: movieId), responseModel: ImagesResponse.self)
+    }
 }

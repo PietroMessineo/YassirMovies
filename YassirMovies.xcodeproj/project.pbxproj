@@ -19,6 +19,7 @@
 		CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */; };
 		CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB22B97561200D0F592 /* TmdbService.swift */; };
 		CB8F8EB52B97564800D0F592 /* DiscoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */; };
+		CB8F8EB72B97569700D0F592 /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB62B97569700D0F592 /* ImagesResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorsChoiceResponse.swift; sourceTree = "<group>"; };
 		CB8F8EB22B97561200D0F592 /* TmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbService.swift; sourceTree = "<group>"; };
 		CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverResponse.swift; sourceTree = "<group>"; };
+		CB8F8EB62B97569700D0F592 /* ImagesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */,
 				CB8F8EB02B97556E00D0F592 /* EditorsChoiceResponse.swift */,
+				CB8F8EB62B97569700D0F592 /* ImagesResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,
 				CB8F8EB32B97561200D0F592 /* TmdbService.swift in Sources */,
 				CB8F8EB12B97556E00D0F592 /* EditorsChoiceResponse.swift in Sources */,
+				CB8F8EB72B97569700D0F592 /* ImagesResponse.swift in Sources */,
 				CB8F8EB52B97564800D0F592 /* DiscoverResponse.swift in Sources */,
 				CB8F8EAD2B97553500D0F592 /* JSONDecoder+Extension.swift in Sources */,
 				CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */,
