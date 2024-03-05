@@ -29,6 +29,10 @@ struct HomeView: View {
                 
                 MovieListView(currentPage: $currentPage, currentMovieList: $currentMovieList)
             }
+            
+            if tmdbManager.isLoading {
+                ProgressView()
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea(edges: .bottom)
