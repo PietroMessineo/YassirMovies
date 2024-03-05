@@ -25,6 +25,7 @@
 		CB8F8EBD2B97792300D0F592 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EBC2B97792300D0F592 /* SearchResponse.swift */; };
 		CB8F8EBF2B97793200D0F592 /* WatchProvidersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EBE2B97793200D0F592 /* WatchProvidersResponse.swift */; };
 		CB8F8EC12B977A1200D0F592 /* TmdbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EC02B977A1200D0F592 /* TmdbManager.swift */; };
+		CB8F8EC32B97813F00D0F592 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EC22B97813F00D0F592 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		CB8F8EBC2B97792300D0F592 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		CB8F8EBE2B97793200D0F592 /* WatchProvidersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchProvidersResponse.swift; sourceTree = "<group>"; };
 		CB8F8EC02B977A1200D0F592 /* TmdbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbManager.swift; sourceTree = "<group>"; };
+		CB8F8EC22B97813F00D0F592 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,8 @@
 		CB8F8E752B97520700D0F592 /* YassirMovies */ = {
 			isa = PBXGroup;
 			children = (
-				CB8F8EAB2B97552800D0F592 /* Extensions */,
 				CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */,
+				CB8F8EAB2B97552800D0F592 /* Extensions */,
 				CB8F8EA12B97523F00D0F592 /* Screen */,
 				CB8F8EA02B97523900D0F592 /* Model */,
 				CB8F8E7A2B97520900D0F592 /* Assets.xcassets */,
@@ -166,6 +168,7 @@
 		CB8F8EA12B97523F00D0F592 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F8EC22B97813F00D0F592 /* HomeView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB8F8EBB2B97791200D0F592 /* MovieDetailsResponse.swift in Sources */,
+				CB8F8EC32B97813F00D0F592 /* HomeView.swift in Sources */,
 				CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */,
 				CB8F8EC12B977A1200D0F592 /* TmdbManager.swift in Sources */,
 				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,

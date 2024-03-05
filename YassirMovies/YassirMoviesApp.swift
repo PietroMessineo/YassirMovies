@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct YassirMoviesApp: App {
+    @StateObject var tmdbManager: TmdbManager = TmdbManager()
+    
     var body: some Scene {
         WindowGroup {
-            
+            NavigationView(content: {
+                HomeView()
+            })
+            .environmentObject(tmdbManager)
         }
     }
 }
