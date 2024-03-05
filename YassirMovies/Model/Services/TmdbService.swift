@@ -13,4 +13,10 @@ struct TmdbService: HTTPClient {
             endpoint: TmdbEndpoint.editorsChoice, responseModel: EditorsChoiceResponse.self, decoder: .customDateDecoder
         )
     }
+    
+    func getDiscover(page: Int, movieList: DiscoverMovieList) async throws -> DiscoverResponse {
+        return try await request(
+            endpoint: TmdbEndpoint.getMovieDiscover(page: page, movieList: movieList), responseModel: DiscoverResponse.self, decoder: .customDateDecoder
+        )
+    }
 }
