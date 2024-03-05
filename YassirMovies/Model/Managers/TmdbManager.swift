@@ -12,7 +12,7 @@ final class TmdbManager: ObservableObject {
     let service = TmdbService()
     
     @Published var isLoading = false
-    @Published var movieEditorsChoice: [Items] = []
+    @Published var movieEditorsChoice: [Items]?
     @Published var movieDetails: MovieDetailsResponse?
     @Published var movieDiscoverList: [Items] = []
     @Published var movieImages: [Backdrops] = []

@@ -12,8 +12,20 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            
+            VStack {
+                if let movieEditorsChoice = tmdbManager.movieEditorsChoice {
+                    CarouselView(spacing: 20, items: movieEditorsChoice.compactMap({ movieItem in
+                        return CoverFlowItem(item: movieItem)
+                    })) { item in
+                        CarouselItemView(item: item)
+                    }
+                    .frame(height: 200)
+                }
+                
+                Spacer()
+            }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .task {
             do {
                 try await tmdbManager.getMoviesEditorsChoice()
