@@ -8,7 +8,7 @@
 import Foundation
 
 struct EditorsChoiceResponse: Codable, Identifiable, Equatable {
-    let id: String
+    let id: Int
     let items: [Items]?
 }
 

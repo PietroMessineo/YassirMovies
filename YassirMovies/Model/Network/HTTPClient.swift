@@ -41,7 +41,7 @@ protocol HTTPClient {
 
 extension HTTPClient {
     private var apiToken: String {
-        return "5c5dded81d0b97cfc53ef5921f5282c0"
+        return "ae7efbeb3042a1c9747a463a463af76d"
     }
     
     private var language: String {
@@ -79,6 +79,10 @@ extension HTTPClient {
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
+        if let body = request.httpBody {
+            print("I SENT REQUEST \(url) AND BODY \(endpoint.body) AND JSON \(String(data: request.httpBody!, encoding: .utf8)) AND REQUEST BODY \(body)")
+        }
+        
         // Methods and headers
         request.httpMethod = endpoint.method.rawValue
 
@@ -92,6 +96,8 @@ extension HTTPClient {
         
         let (data, response) = try await URLSession.shared.data(for: request, delegate: nil)
         
+        print("I GOT RESPONSE \(response) AND BODY \(String(data: data, encoding: .utf8))")
+        
         guard let response = response as? HTTPURLResponse else {
             throw RequestError.noResponse
         }
@@ -100,9 +106,18 @@ extension HTTPClient {
         case 200 ... 299:
             do {
                 return try decoder!.decode(responseModel, from: data)
+            } catch let DecodingError.dataCorrupted(context) {
+                print("Data corrupted: \(context)")
+            } catch let DecodingError.keyNotFound(key, context) {
+                print("Key '\(key)' not found: \(context.debugDescription), codingPath: \(context.codingPath)")
+            } catch let DecodingError.typeMismatch(type, context)  {
+                print("Type '\(type)' mismatch: \(context.debugDescription), codingPath: \(context.codingPath)")
+            } catch let DecodingError.valueNotFound(value, context) {
+                print("Value '\(value)' not found: \(context.debugDescription), codingPath: \(context.codingPath)")
             } catch {
-                throw RequestError.decode
+                print("Unexpected error: \(error.localizedDescription)")
             }
+            throw RequestError.decode
         case 401:
             throw RequestError.unauthorized
         case 400, 404, 500:

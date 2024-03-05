@@ -69,7 +69,7 @@ extension TmdbEndpoint: Endpoint {
     var path: String {
         switch self {
         case .editorsChoice:
-            return "/3/list/8249900"
+            return "/3/list/8293039"
         case .getMovieDetails(let id):
             return "/3/movie/\(id)"
         case .getMovieDiscover:

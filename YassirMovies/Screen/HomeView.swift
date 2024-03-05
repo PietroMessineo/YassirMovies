@@ -11,7 +11,16 @@ struct HomeView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
     
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            
+        }
+        .task {
+            do {
+                try await tmdbManager.getMoviesEditorsChoice()
+            } catch {
+                print("Error fetching editors choice \(error.localizedDescription)")
+            }
+        }
     }
 }
 
