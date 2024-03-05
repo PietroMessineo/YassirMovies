@@ -17,7 +17,7 @@ struct DetailBackgroundView: View {
             if let posterImage = posterImage {
                 posterImage
                     .resizable()
-                    .frame(width: geometry.size.width, height: .infinity)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                     .blur(radius: 60)
                     .opacity(0.75)
                 

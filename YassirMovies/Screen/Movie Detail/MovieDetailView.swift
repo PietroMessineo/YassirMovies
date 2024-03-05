@@ -10,21 +10,40 @@ import Kingfisher
 
 struct MovieDetailView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
+    
     let movieId: Int
     let posterImage: KFImage?
     
     @State var shouldCollapse: Bool = false
+    @State var selectedTab: MovieDetailTab = .none
     
     var body: some View {
         ZStack {
             DetailBackgroundView(posterImage: posterImage)
-            
-            GeometryReader(content: { geometry in
-                ScrollView {
-                    // Poster + Title and Release Status
-                    DetailHeaderView(shouldCollapse: $shouldCollapse, screenWidth: geometry.size.width, posterImage: posterImage)
+            VStack {
+                GeometryReader(content: { geometry in
+                    ScrollView {
+                        // Poster + Title and Release Status
+                        DetailHeaderView(shouldCollapse: $shouldCollapse, screenWidth: geometry.size.width, posterImage: posterImage)
+                        // Info related to release status and movie's duration
+                        MovieDetailInfoView()
+                    }
+                })
+                
+                Spacer()
+                
+                HStack {
+                    HStack {
+                        Spacer()
+                        ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .trailer)
+                        Spacer()
+                        ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .cast)
+                        Spacer()
+                        ButtonDetailTabView(selectedTab: $selectedTab, shouldCollapse: $shouldCollapse, currentTab: .watch)
+                        Spacer()
+                    }
                 }
-            })
+            }
         }
         .task {
             do {
@@ -35,10 +54,18 @@ struct MovieDetailView: View {
                 print("Error \(error.localizedDescription)")
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
     MovieDetailView(movieId: 1028703, posterImage: nil)
         .environmentObject(TmdbManager())
+}
+
+enum MovieDetailTab: String {
+    case trailer = "Trailer"
+    case cast = "Cast"
+    case watch = "Watch"
+    case none
 }
