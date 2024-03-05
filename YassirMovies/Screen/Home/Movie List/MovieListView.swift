@@ -13,35 +13,42 @@ struct MovieListView: View {
     @Binding var currentPage: Int
     @Binding var currentMovieList: DiscoverMovieList
     
-    let itemsPerRow = 3
+    let minItemWidth: CGFloat = 100 // Define desired minimum width for an item.
     let gridSpacing: CGFloat = 10
+    let screenWidth: CGFloat
     
     var body: some View {
-        // LazyVGrid instead of a List for easy pagination
-        LazyVGrid(columns: createGridColumns(itemsPerRow, gridSpacing), spacing: gridSpacing) {
-            ForEach(0..<tmdbManager.movieDiscoverList.count, id: \.self) { index in
-                if index == tmdbManager.movieDiscoverList.count - 1 {
-                    // Load more items when the last item is visible
-                    MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
-                        .onAppear {
-                            loadMoreItems()
-                        }
-                } else {
-                    MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
+            // LazyVGrid instead of a List for easy pagination
+        LazyVGrid(columns: createGridColumns(forWidth: CGFloat(screenWidth), minItemWidth: minItemWidth, gridSpacing: gridSpacing), spacing: gridSpacing) {
+                ForEach(0..<tmdbManager.movieDiscoverList.count, id: \.self) { index in
+                    if index == tmdbManager.movieDiscoverList.count - 1 {
+                        // Load more items when the last item is visible
+                        MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
+                            .onAppear {
+                                loadMoreItems()
+                            }
+                    } else {
+                        MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
+                    }
                 }
             }
-        }
-        .id("Grid")
-        .padding(.horizontal, gridSpacing)
+            .id("Grid") // May need update when layout changes to correctly handle pagination.
+            .padding(.horizontal, gridSpacing)
+        
         .onAppear {
             // Load initial items
             loadMoreItems()
         }
     }
     
-    private func createGridColumns(_ itemsPerRow: Int, _ gridSpacing: CGFloat) -> [GridItem] {
+    private func createGridColumns(forWidth screenWidth: CGFloat, minItemWidth: CGFloat, gridSpacing: CGFloat) -> [GridItem] {
+        // Calculate the number of items per row based on the screen width, minimum item width, and spacing
+        let totalSpacing: CGFloat = gridSpacing * 2 // Adjust this if needed to account for padding
+        let availableWidth = screenWidth - totalSpacing
+        let itemsPerRow = max(1, floor(availableWidth / (minItemWidth + gridSpacing)))
+        
         var columns: [GridItem] = []
-        for _ in 0..<itemsPerRow {
+        for _ in 0..<Int(itemsPerRow) {
             columns.append(GridItem(.flexible(), spacing: gridSpacing))
         }
         return columns

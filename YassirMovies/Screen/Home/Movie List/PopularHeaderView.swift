@@ -41,7 +41,6 @@ struct PopularHeaderView: View {
             // Clear the current array and fetch new data
             Task {
                 do {
-                    print("Update movie discover with \(newMovieList)")
                     tmdbManager.movieDiscoverList.removeAll()
                     try await tmdbManager.getMovieDiscover(page: 1, movieList: newMovieList)
                 } catch {

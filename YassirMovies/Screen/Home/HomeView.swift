@@ -15,20 +15,22 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            ScrollView {
-                if let movieEditorsChoice = tmdbManager.movieEditorsChoice {
-                    CarouselView(spacing: 20, items: movieEditorsChoice.compactMap({ movieItem in
-                        return CoverFlowItem(item: movieItem)
-                    })) { item in
-                        CarouselItemView(item: item)
+            GeometryReader(content: { geometry in
+                ScrollView {
+                    if let movieEditorsChoice = tmdbManager.movieEditorsChoice {
+                        CarouselView(spacing: 20, items: movieEditorsChoice.compactMap({ movieItem in
+                            return CoverFlowItem(item: movieItem)
+                        })) { item in
+                            CarouselItemView(item: item)
+                        }
+                        .frame(height: 200)
                     }
-                    .frame(height: 200)
+                    
+                    PopularHeaderView(currentMovieList: $currentMovieList)
+                    
+                    MovieListView(currentPage: $currentPage, currentMovieList: $currentMovieList, screenWidth: geometry.size.width)
                 }
-                
-                PopularHeaderView(currentMovieList: $currentMovieList)
-                
-                MovieListView(currentPage: $currentPage, currentMovieList: $currentMovieList)
-            }
+            })
             
             if tmdbManager.isLoading {
                 ProgressView()
