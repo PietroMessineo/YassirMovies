@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */; };
-		CB8F8E792B97520700D0F592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E782B97520700D0F592 /* ContentView.swift */; };
 		CB8F8E7B2B97520900D0F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7A2B97520900D0F592 /* Assets.xcassets */; };
 		CB8F8E7E2B97520900D0F592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7D2B97520900D0F592 /* Preview Assets.xcassets */; };
 		CB8F8E882B97520900D0F592 /* YassirMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E872B97520900D0F592 /* YassirMoviesTests.swift */; };
 		CB8F8E922B97520900D0F592 /* YassirMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E912B97520900D0F592 /* YassirMoviesUITests.swift */; };
 		CB8F8E942B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E932B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift */; };
+		CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA72B97528200D0F592 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CB8F8E732B97520700D0F592 /* YassirMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesApp.swift; sourceTree = "<group>"; };
-		CB8F8E782B97520700D0F592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB8F8E7A2B97520900D0F592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB8F8E7D2B97520900D0F592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB8F8E832B97520900D0F592 /* YassirMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		CB8F8E8D2B97520900D0F592 /* YassirMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YassirMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F8E912B97520900D0F592 /* YassirMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesUITests.swift; sourceTree = "<group>"; };
 		CB8F8E932B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB8F8EA72B97528200D0F592 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */,
-				CB8F8E782B97520700D0F592 /* ContentView.swift */,
+				CB8F8EA12B97523F00D0F592 /* Screen */,
+				CB8F8EA02B97523900D0F592 /* Model */,
 				CB8F8E7A2B97520900D0F592 /* Assets.xcassets */,
 				CB8F8E7C2B97520900D0F592 /* Preview Content */,
 			);
@@ -125,6 +126,61 @@
 				CB8F8E932B97520900D0F592 /* YassirMoviesUITestsLaunchTests.swift */,
 			);
 			path = YassirMoviesUITests;
+			sourceTree = "<group>";
+		};
+		CB8F8EA02B97523900D0F592 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F8EA62B97526A00D0F592 /* Managers */,
+				CB8F8EA52B97526100D0F592 /* Endpoints */,
+				CB8F8EA42B97525D00D0F592 /* Services */,
+				CB8F8EA32B97525900D0F592 /* Entities */,
+				CB8F8EA22B97524800D0F592 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB8F8EA12B97523F00D0F592 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CB8F8EA22B97524800D0F592 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CB8F8EA72B97528200D0F592 /* HTTPClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CB8F8EA32B97525900D0F592 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CB8F8EA42B97525D00D0F592 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB8F8EA52B97526100D0F592 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		CB8F8EA62B97526A00D0F592 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8F8E792B97520700D0F592 /* ContentView.swift in Sources */,
+				CB8F8EA82B97528200D0F592 /* HTTPClient.swift in Sources */,
 				CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
