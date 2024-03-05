@@ -29,6 +29,9 @@ struct MovieListView: View {
                             }
                     } else {
                         MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
+                            .onTapGesture {
+                                print("Movie id \(tmdbManager.movieDiscoverList[index])")
+                            }
                     }
                 }
             }
