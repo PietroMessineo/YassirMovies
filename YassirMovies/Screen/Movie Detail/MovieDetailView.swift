@@ -59,6 +59,12 @@ struct MovieDetailView: View {
             }
         }
         .navigationBarTitleDisplayMode(.inline)
+        .onDisappear {
+            // Get rid of movie details on dismissal
+            tmdbManager.movieDetails = nil
+            tmdbManager.movieWatchProviders = [:]
+            tmdbManager.personResponse = nil
+        }
     }
 }
 
