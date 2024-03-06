@@ -15,6 +15,14 @@
 		CB7FE6CF2B989F13002D643D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EBC2B97792300D0F592 /* SearchResponse.swift */; };
 		CB7FE6D02B989F13002D643D /* WatchProvidersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EBE2B97793200D0F592 /* WatchProvidersResponse.swift */; };
 		CB7FE6D12B989F18002D643D /* DiscoverResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB42B97564800D0F592 /* DiscoverResponse.swift */; };
+		CB7FE6D32B98A242002D643D /* MockTmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6D22B98A242002D643D /* MockTmdbService.swift */; };
+		CB7FE6D42B98A244002D643D /* MockTmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6D22B98A242002D643D /* MockTmdbService.swift */; };
+		CB7FE6D62B98A2FA002D643D /* TmdbManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6D52B98A2FA002D643D /* TmdbManagerTests.swift */; };
+		CB7FE6D72B98A371002D643D /* TmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EB22B97561200D0F592 /* TmdbService.swift */; };
+		CB7FE6D82B98A3B7002D643D /* TmdbEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA92B9752B700D0F592 /* TmdbEndpoint.swift */; };
+		CB7FE6D92B98A3BA002D643D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EA72B97528200D0F592 /* HTTPClient.swift */; };
+		CB7FE6DA2B98A3C7002D643D /* JSONDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EAC2B97553500D0F592 /* JSONDecoder+Extension.swift */; };
+		CB7FE6DB2B98A3D2002D643D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8ED02B978A5700D0F592 /* Date+Extension.swift */; };
 		CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */; };
 		CB8F8E7B2B97520900D0F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7A2B97520900D0F592 /* Assets.xcassets */; };
 		CB8F8E7E2B97520900D0F592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7D2B97520900D0F592 /* Preview Assets.xcassets */; };
@@ -77,6 +85,8 @@
 /* Begin PBXFileReference section */
 		CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomJsonDecoderTests.swift; sourceTree = "<group>"; };
 		CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTest.swift; sourceTree = "<group>"; };
+		CB7FE6D22B98A242002D643D /* MockTmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTmdbService.swift; sourceTree = "<group>"; };
+		CB7FE6D52B98A2FA002D643D /* TmdbManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbManagerTests.swift; sourceTree = "<group>"; };
 		CB8F8E732B97520700D0F592 /* YassirMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesApp.swift; sourceTree = "<group>"; };
 		CB8F8E7A2B97520900D0F592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -197,6 +207,7 @@
 				CB8F8E872B97520900D0F592 /* YassirMoviesTests.swift */,
 				CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */,
 				CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */,
+				CB7FE6D52B98A2FA002D643D /* TmdbManagerTests.swift */,
 			);
 			path = YassirMoviesTests;
 			sourceTree = "<group>";
@@ -256,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				CB8F8EB22B97561200D0F592 /* TmdbService.swift */,
+				CB7FE6D22B98A242002D643D /* MockTmdbService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -565,6 +577,7 @@
 				CB8F8EFE2B98481200D0F592 /* RemoteImageView.swift in Sources */,
 				CB8F8EBD2B97792300D0F592 /* SearchResponse.swift in Sources */,
 				CB8F8ED12B978A5700D0F592 /* Date+Extension.swift in Sources */,
+				CB7FE6D32B98A242002D643D /* MockTmdbService.swift in Sources */,
 				CB8F8ECF2B978A1100D0F592 /* CarouselItemView.swift in Sources */,
 				CB8F8ED52B9798FA00D0F592 /* MovieListView.swift in Sources */,
 				CB8F8EB52B97564800D0F592 /* DiscoverResponse.swift in Sources */,
@@ -586,10 +599,17 @@
 			files = (
 				CB7FE6C12B9898C7002D643D /* DateExtensionsTest.swift in Sources */,
 				CB7FE6CB2B989D63002D643D /* MovieDetailsResponse.swift in Sources */,
+				CB7FE6D42B98A244002D643D /* MockTmdbService.swift in Sources */,
+				CB7FE6DA2B98A3C7002D643D /* JSONDecoder+Extension.swift in Sources */,
+				CB7FE6D62B98A2FA002D643D /* TmdbManagerTests.swift in Sources */,
+				CB7FE6DB2B98A3D2002D643D /* Date+Extension.swift in Sources */,
 				CB8F8E882B97520900D0F592 /* YassirMoviesTests.swift in Sources */,
 				CB7FE6CA2B989D5D002D643D /* EditorsChoiceResponse.swift in Sources */,
 				CB7FE6CF2B989F13002D643D /* SearchResponse.swift in Sources */,
+				CB7FE6D82B98A3B7002D643D /* TmdbEndpoint.swift in Sources */,
 				CB7FE6D02B989F13002D643D /* WatchProvidersResponse.swift in Sources */,
+				CB7FE6D72B98A371002D643D /* TmdbService.swift in Sources */,
+				CB7FE6D92B98A3BA002D643D /* HTTPClient.swift in Sources */,
 				CB7FE6CC2B989D75002D643D /* TmdbManager.swift in Sources */,
 				CB7FE6D12B989F18002D643D /* DiscoverResponse.swift in Sources */,
 				CB7FE6BF2B989883002D643D /* CustomJsonDecoderTests.swift in Sources */,

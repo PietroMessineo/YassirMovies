@@ -9,7 +9,7 @@ import Foundation
 
 @MainActor
 final class TmdbManager: ObservableObject {
-    let service: TmdbService = TmdbService()
+    let service: TmdbServiceProtocol
     
     @Published var isLoading = false
     @Published var movieEditorsChoice: [Items]?
@@ -17,6 +17,10 @@ final class TmdbManager: ObservableObject {
     @Published var movieDiscoverList: [Items] = []
     @Published var searchResults: [SearchResult] = []
     @Published var movieWatchProviders: [String: CountryResult] = [:]
+    
+    init(service: TmdbServiceProtocol = TmdbService()) {
+        self.service = service
+    }
     
     func getMoviesEditorsChoice() async throws {
         isLoading = true

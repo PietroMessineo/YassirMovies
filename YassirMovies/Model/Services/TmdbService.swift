@@ -36,3 +36,14 @@ struct TmdbService: HTTPClient {
             endpoint: TmdbEndpoint.getWatchProviders(movieId: movieId), responseModel: WatchProvidersResponse.self, decoder: .customDateDecoder)
     }
 }
+
+protocol TmdbServiceProtocol {
+    func getEditorsChoice() async throws -> EditorsChoiceResponse
+    func getDiscover(page: Int, movieList: DiscoverMovieList) async throws -> DiscoverResponse
+    func getMovieDetails(id: String) async throws -> MovieDetailsResponse
+    func searchFor(query: String) async throws -> SearchResponse
+    func getMovieWatchProviders(movieId: String) async throws -> WatchProvidersResponse
+}
+
+// Ensure TmdbService conforms to this protocol
+extension TmdbService: TmdbServiceProtocol {}
