@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import ModelPackage
+
 @testable import YassirMovies
 
 @MainActor
@@ -25,6 +27,7 @@ class TmdbManagerTests: XCTestCase {
             XCTFail("Test failed due to an unexpected error: \(error).")
         }
     }
+    
     func testGetMovieDetails() async {
         let mockService = MockTmdbService()
         let manager = TmdbManager(service: mockService)
@@ -42,3 +45,4 @@ class TmdbManagerTests: XCTestCase {
         }
     }
 }
+

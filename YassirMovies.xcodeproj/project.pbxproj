@@ -37,6 +37,9 @@
 		CB8F8EF62B97D06000D0F592 /* BackdropOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF52B97D06000D0F592 /* BackdropOverlayView.swift */; };
 		CB8F8EF92B98414D00D0F592 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF82B98414D00D0F592 /* SearchView.swift */; };
 		CB8F8F002B98485E00D0F592 /* SearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EFF2B98485E00D0F592 /* SearchItemView.swift */; };
+		CBAB15AB2B98D76A00F9B3AD /* ComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */; };
+		CBAB15AD2B98D76A00F9B3AD /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15AC2B98D76A00F9B3AD /* ModelPackage */; };
+		CBAB15B12B98D77000F9B3AD /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15B02B98D77000F9B3AD /* ModelPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAB15AB2B98D76A00F9B3AD /* ComponentsPackage in Frameworks */,
+				CBAB15AD2B98D76A00F9B3AD /* ModelPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAB15B12B98D77000F9B3AD /* ModelPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +131,7 @@
 				CB8F8E862B97520900D0F592 /* YassirMoviesTests */,
 				CB8F8E902B97520900D0F592 /* YassirMoviesUITests */,
 				CB8F8E742B97520700D0F592 /* Products */,
+				CBAB15A92B98D76A00F9B3AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +307,13 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		CBAB15A92B98D76A00F9B3AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +352,10 @@
 				CB8F8E852B97520900D0F592 /* PBXTargetDependency */,
 			);
 			name = YassirMoviesTests;
+			packageProductDependencies = (
+				CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */,
+				CBAB15AC2B98D76A00F9B3AD /* ModelPackage */,
+			);
 			productName = YassirMoviesTests;
 			productReference = CB8F8E832B97520900D0F592 /* YassirMoviesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -356,6 +374,9 @@
 				CB8F8E8F2B97520900D0F592 /* PBXTargetDependency */,
 			);
 			name = YassirMoviesUITests;
+			packageProductDependencies = (
+				CBAB15B02B98D77000F9B3AD /* ModelPackage */,
+			);
 			productName = YassirMoviesUITests;
 			productReference = CB8F8E8D2B97520900D0F592 /* YassirMoviesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -821,6 +842,21 @@
 			productName = ComponentsPackage;
 		};
 		CB7FE6E72B98CEBF002D643D /* ModelPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
+			productName = ModelPackage;
+		};
+		CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB7FE6E32B98C99F002D643D /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */;
+			productName = ComponentsPackage;
+		};
+		CBAB15AC2B98D76A00F9B3AD /* ModelPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
+			productName = ModelPackage;
+		};
+		CBAB15B02B98D77000F9B3AD /* ModelPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
 			productName = ModelPackage;
