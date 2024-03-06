@@ -62,7 +62,6 @@ struct MovieDetailView: View {
         .task {
             do {
                 try await tmdbManager.getMovieDetails(id: String(movieId))
-                try await tmdbManager.getMovieImages(movieId: String(movieId))
                 try await tmdbManager.getMovieWatchProviders(movieId: String(movieId))
             } catch {
                 print("Error getting data \(error.localizedDescription)")
@@ -73,7 +72,6 @@ struct MovieDetailView: View {
             // Get rid of movie details on dismissal
             tmdbManager.movieDetails = nil
             tmdbManager.movieWatchProviders = [:]
-            tmdbManager.personResponse = nil
         }
     }
 }

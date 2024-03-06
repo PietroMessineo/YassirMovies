@@ -11,8 +11,6 @@ enum TmdbEndpoint {
     case editorsChoice
     case getMovieDetails(id: String)
     case getMovieDiscover(page: Int, movieList: DiscoverMovieList)
-    case getImages(movieId: String)
-    case getPerson(id: String)
     case searchFor(query: String)
     case getWatchProviders(movieId: String)
 }
@@ -49,12 +47,6 @@ extension TmdbEndpoint: Endpoint {
             }
             
             return defaultQueries
-        case .getImages:
-            return nil
-        case .getPerson:
-            return [
-                URLQueryItem(name: "append_to_response", value: "movie_credits,images")
-            ]
         case .searchFor(let query):
             let region = Locale.current.region?.identifier
             return [
@@ -76,10 +68,6 @@ extension TmdbEndpoint: Endpoint {
             return "/3/movie/\(id)"
         case .getMovieDiscover:
             return "/3/discover/movie"
-        case .getImages(let movieId):
-            return "/3/movie/\(movieId)/images"
-        case .getPerson(let id):
-            return "/3/person/\(id)"
         case .searchFor:
             return "/3/search/multi"
         case .getWatchProviders(let movieId):
@@ -94,10 +82,6 @@ extension TmdbEndpoint: Endpoint {
         case .getMovieDetails:
             return .get
         case .getMovieDiscover:
-            return .get
-        case .getImages:
-            return .get
-        case .getPerson:
             return .get
         case .searchFor:
             return .get
@@ -114,10 +98,6 @@ extension TmdbEndpoint: Endpoint {
             return nil
         case .getMovieDiscover:
             return nil
-        case .getImages:
-            return nil
-        case .getPerson:
-            return nil
         case .searchFor:
             return nil
         case .getWatchProviders:
@@ -132,10 +112,6 @@ extension TmdbEndpoint: Endpoint {
         case .getMovieDetails:
             return nil
         case .getMovieDiscover:
-            return nil
-        case .getImages:
-            return nil
-        case .getPerson:
             return nil
         case .searchFor:
             return nil

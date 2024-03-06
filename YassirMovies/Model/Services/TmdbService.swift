@@ -20,18 +20,10 @@ struct TmdbService: HTTPClient {
         )
     }
     
-    func getImages(movieId: String) async throws -> ImagesResponse {
-        return try await request(endpoint: TmdbEndpoint.getImages(movieId: movieId), responseModel: ImagesResponse.self)
-    }
-    
     func getMovieDetails(id: String) async throws -> MovieDetailsResponse {
         return try await request(
             endpoint: TmdbEndpoint.getMovieDetails(id: id), responseModel: MovieDetailsResponse.self, decoder: .customDateDecoderWithCustomStrategy
         )
-    }
-    
-    func getPerson(id: String) async throws -> PersonResponse {
-        return try await request(endpoint: TmdbEndpoint.getPerson(id: id), responseModel: PersonResponse.self, decoder: .customDateDecoder)
     }
     
     func searchFor(query: String) async throws -> SearchResponse {

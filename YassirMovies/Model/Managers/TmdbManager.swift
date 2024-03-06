@@ -9,14 +9,12 @@ import Foundation
 
 @MainActor
 final class TmdbManager: ObservableObject {
-    let service = TmdbService()
+    let service: TmdbService = TmdbService()
     
     @Published var isLoading = false
     @Published var movieEditorsChoice: [Items]?
     @Published var movieDetails: MovieDetailsResponse?
     @Published var movieDiscoverList: [Items] = []
-    @Published var movieImages: [Backdrops] = []
-    @Published var personResponse: PersonResponse?
     @Published var searchResults: [SearchResult] = []
     @Published var movieWatchProviders: [String: CountryResult] = [:]
     
@@ -42,22 +40,6 @@ final class TmdbManager: ObservableObject {
         if let items = discover.results {
             movieDiscoverList.append(contentsOf: items)
         }
-        isLoading = false
-    }
-    
-    func getMovieImages(movieId: String) async throws {
-        isLoading = true
-        let imagesResponse = try await service.getImages(movieId: movieId)
-        if let backdrops = imagesResponse.backdrops {
-            movieImages = backdrops
-        }
-        isLoading = false
-    }
-    
-    func getPerson(id: String) async throws {
-        isLoading = true
-        let personResponse = try await service.getPerson(id: id)
-        self.personResponse = personResponse
         isLoading = false
     }
     
