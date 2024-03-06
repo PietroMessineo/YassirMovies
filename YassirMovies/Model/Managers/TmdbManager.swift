@@ -65,7 +65,7 @@ final class TmdbManager: ObservableObject {
         isLoading = true
         let searchResponse = try await service.searchFor(query: query)
         if let results = searchResponse.results {
-            self.searchResults = results
+            self.searchResults = results.filter({ $0.poster_path != nil || $0.profile_path != nil })
         }
         isLoading = false
     }

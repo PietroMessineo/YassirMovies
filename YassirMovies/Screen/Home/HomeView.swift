@@ -53,7 +53,7 @@ struct HomeView: View {
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {
-                    
+                    showSearch = true
                 }, label: {
                     Image(systemName: "magnifyingglass.circle")
                 })
@@ -62,7 +62,7 @@ struct HomeView: View {
             }
         })
         .sheet(isPresented: $showSearch, content: {
-            // TODO: - Implement Search
+            SearchView()
         })
     }
 }
