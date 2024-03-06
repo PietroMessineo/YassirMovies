@@ -30,12 +30,12 @@ struct SearchItemView: View {
                 if item.media_type == "person" {
                     Text(item.known_for_department ?? "")
                         .font(.system(size: 17, weight: .medium))
-                        .foregroundColor(.white.opacity(0.5))
+                        .foregroundColor(.primary.opacity(0.5))
                 } else {
                     if let releaseStatus = item.first_air_date?.getReleaseStatus() ?? item.release_date?.getReleaseStatus() {
                         Text(releaseStatus)
                             .font(.system(size: 17, weight: .medium))
-                            .foregroundColor(.white.opacity(0.5))
+                            .foregroundColor(.primary.opacity(0.5))
                     }
                 }
             }

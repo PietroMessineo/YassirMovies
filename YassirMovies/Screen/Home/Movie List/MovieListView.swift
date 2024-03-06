@@ -18,27 +18,22 @@ struct MovieListView: View {
     let screenWidth: CGFloat
     
     var body: some View {
-            // LazyVGrid instead of a List for easy pagination
+        // LazyVGrid instead of a List for easy pagination
         LazyVGrid(columns: createGridColumns(forWidth: CGFloat(screenWidth), minItemWidth: minItemWidth, gridSpacing: gridSpacing), spacing: gridSpacing) {
-                ForEach(0..<tmdbManager.movieDiscoverList.count, id: \.self) { index in
-                    if index == tmdbManager.movieDiscoverList.count - 1 {
-                        // Load more items when the last item is visible
-                        MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
-                            .onAppear {
-                                loadMoreItems()
-                            }
-                    } else {
-                        MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
-                    }
+            ForEach(0..<tmdbManager.movieDiscoverList.count, id: \.self) { index in
+                if index == tmdbManager.movieDiscoverList.count - 1 {
+                    // Load more items when the last item is visible
+                    MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
+                        .onAppear {
+                            loadMoreItems()
+                        }
+                } else {
+                    MovieThumbnailView(item: tmdbManager.movieDiscoverList[index])
                 }
             }
-            .id("Grid") // May need update when layout changes to correctly handle pagination.
-            .padding(.horizontal, gridSpacing)
-        
-        .onAppear {
-            // Load initial items
-            loadMoreItems()
         }
+        .id("Grid") // May need update when layout changes to correctly handle pagination.
+        .padding(.horizontal, gridSpacing)
     }
     
     private func createGridColumns(forWidth screenWidth: CGFloat, minItemWidth: CGFloat, gridSpacing: CGFloat) -> [GridItem] {
