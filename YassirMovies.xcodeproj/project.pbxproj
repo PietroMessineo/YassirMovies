@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB7FE6BF2B989883002D643D /* CustomJsonDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */; };
+		CB7FE6C12B9898C7002D643D /* DateExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */; };
 		CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */; };
 		CB8F8E7B2B97520900D0F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7A2B97520900D0F592 /* Assets.xcassets */; };
 		CB8F8E7E2B97520900D0F592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7D2B97520900D0F592 /* Preview Assets.xcassets */; };
@@ -69,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomJsonDecoderTests.swift; sourceTree = "<group>"; };
+		CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionsTest.swift; sourceTree = "<group>"; };
 		CB8F8E732B97520700D0F592 /* YassirMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YassirMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YassirMoviesApp.swift; sourceTree = "<group>"; };
 		CB8F8E7A2B97520900D0F592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				CB8F8E872B97520900D0F592 /* YassirMoviesTests.swift */,
+				CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */,
+				CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */,
 			);
 			path = YassirMoviesTests;
 			sourceTree = "<group>";
@@ -580,7 +586,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB7FE6C12B9898C7002D643D /* DateExtensionsTest.swift in Sources */,
 				CB8F8E882B97520900D0F592 /* YassirMoviesTests.swift in Sources */,
+				CB7FE6BF2B989883002D643D /* CustomJsonDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YassirMovies/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YassirMovies/Info.plist;
@@ -766,6 +775,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"YassirMovies/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YassirMovies/Info.plist;
@@ -795,6 +805,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -814,6 +825,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -832,6 +844,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pietromessineo.YassirMoviesUITests;
@@ -849,6 +862,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pietromessineo.YassirMoviesUITests;

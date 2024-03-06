@@ -15,6 +15,7 @@ struct PopularHeaderView: View {
         HStack {
             Text(currentMovieList.rawValue)
                 .font(.system(size: 24, weight: .bold))
+                .accessibilityIdentifier("popularContentLabel")
             
             Spacer()
             
@@ -24,17 +25,20 @@ struct PopularHeaderView: View {
                 }, label: {
                     Text("Popular")
                 })
+                .accessibilityIdentifier("popularFilterButton")
                 
                 Button(action: {
                     currentMovieList = .upcoming
                 }, label: {
-                    Text("Coming soon")
+                    Text("Coming Soon")
                 })
+                .accessibilityIdentifier("upcomingFilterButton")
             } label: {
                 Image(systemName: "line.3.horizontal.decrease.circle")
                     .font(.system(size: 30))
             }
             .foregroundStyle(Color.primary)
+            .accessibilityIdentifier("menuFilter")
         }
         .padding(.horizontal, 16)
         .onChange(of: currentMovieList) { newMovieList in
