@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct SearchItemView: View {
     let item: SearchResult

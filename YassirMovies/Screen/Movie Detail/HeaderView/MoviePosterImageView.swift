@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct MoviePosterImageView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

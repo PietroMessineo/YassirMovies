@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct DetailBackgroundView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

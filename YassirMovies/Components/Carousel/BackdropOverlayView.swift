@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct BackdropOverlayView: View {
     let item: CoverFlowItem

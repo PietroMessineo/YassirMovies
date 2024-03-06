@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct WatchProviderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

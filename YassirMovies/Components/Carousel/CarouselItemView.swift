@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ComponentsPackage
 
 struct CarouselItemView: View {
     let item: CoverFlowItem
