@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 // A generic carousel view that can display any kind of view (Content) for a given collection of items (Item).
 struct CarouselView<Content: View, Item: RandomAccessCollection>: View where Item.Element: Identifiable {

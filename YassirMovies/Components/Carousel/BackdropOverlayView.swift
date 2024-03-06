@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+import ComponentsPackage
 
 struct BackdropOverlayView: View {
     let item: CoverFlowItem

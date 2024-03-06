@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+import ModelPackage
 
 struct SearchView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

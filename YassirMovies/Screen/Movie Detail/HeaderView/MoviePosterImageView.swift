@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
-import Kingfisher
+import ComponentsPackage
+import ModelPackage
 
 struct MoviePosterImageView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
-    let posterImage: KFImage?
+    let posterImage: Image?
     let screenWidth: CGFloat
     @Binding var shouldCollapse: Bool
     

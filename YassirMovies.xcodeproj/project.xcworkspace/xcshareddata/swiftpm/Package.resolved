@@ -1,14 +1,24 @@
 {
+  "originHash" : "db1cd73853eb11c3561b2d30540a9cf847c5ddcc84bb1d4596e7a7e5f5e33f7d",
   "pins" : [
     {
-      "identity" : "kingfisher",
+      "identity" : "yassircomponentspackage",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/onevcat/Kingfisher",
+      "location" : "https://github.com/PietroMessineo/YassirComponentsPackage.git",
       "state" : {
-        "revision" : "5b92f029fab2cce44386d28588098b5be0824ef5",
-        "version" : "7.11.0"
+        "branch" : "main",
+        "revision" : "f6a2c04d2fba11b2c0e57b414d9c30112183dd06"
+      }
+    },
+    {
+      "identity" : "yassirmodelpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PietroMessineo/YassirModelPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "74b935798465339f85b92fcb6ba636f4d9310ee8"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

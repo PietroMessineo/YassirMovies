@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct HomeView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

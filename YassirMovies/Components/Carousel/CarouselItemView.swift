@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import Kingfisher
+import ComponentsPackage
+import ModelPackage
 
 struct CarouselItemView: View {
     let item: CoverFlowItem

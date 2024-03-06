@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct PopularHeaderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
