@@ -26,7 +26,7 @@ struct HomeView: View {
                                 CarouselItemView(item: movie)
                             }
                         }
-                        .frame(height: 200)
+                        .frame(height: geometry.size.width - 200)
                     }
                     
                     PopularHeaderView(currentMovieList: $currentMovieList)
