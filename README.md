@@ -11,7 +11,7 @@ The app is structured into several key components:
     - `HomeView.swift`: The main view where users land, featuring movie categories and a search bar.
     - `MovieDetailView.swift`: Shows detailed information about a specific movie.
     - `SearchView.swift`: Allows users to search for movies, actors, shows based on keywords.
-- **Networking**: Handles API requests and responses.
+- **Networking**: Handles API requests and responses. (As Package)
     - `HTTPClient.swift`: Core networking client for making HTTP requests.
     - `TmdbEndpoint.swift`: Defines the endpoints for TMDB API requests.
     - `TmdbService.swift`: Service layer for fetching data from TMDB API.
