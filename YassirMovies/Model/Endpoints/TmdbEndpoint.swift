@@ -125,8 +125,3 @@ enum DiscoverMovieList: String {
     case popular = "Popular"
     case upcoming = "Coming soon"
 }
-
-enum DiscoverTvShowList: String {
-    case popular = "Popular"
-    case upcoming = "Coming soon"
-}
