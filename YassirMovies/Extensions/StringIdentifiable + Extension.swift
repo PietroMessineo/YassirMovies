@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Used in order to observe onChange when using a String
 extension String: Identifiable {
     public typealias ID = Int
     public var id: Int {
