@@ -7,6 +7,7 @@
 
 import SwiftUI
 import ComponentsPackage
+import ModelPackage
 
 struct PersonItemView: View {
     let cast: Person

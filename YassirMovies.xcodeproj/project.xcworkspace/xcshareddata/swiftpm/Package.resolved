@@ -1,0 +1,24 @@
+{
+  "originHash" : "db1cd73853eb11c3561b2d30540a9cf847c5ddcc84bb1d4596e7a7e5f5e33f7d",
+  "pins" : [
+    {
+      "identity" : "yassircomponentspackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PietroMessineo/YassirComponentsPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f6a2c04d2fba11b2c0e57b414d9c30112183dd06"
+      }
+    },
+    {
+      "identity" : "yassirmodelpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PietroMessineo/YassirModelPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "88d15c1705acca8dc34bd58232324f2947ec0773"
+      }
+    }
+  ],
+  "version" : 3
+}

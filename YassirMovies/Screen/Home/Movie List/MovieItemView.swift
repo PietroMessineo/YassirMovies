@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import ComponentsPackage
+import ModelPackage
 
 struct MovieItemView: View {
     let image: Image?

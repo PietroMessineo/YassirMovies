@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct CastView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

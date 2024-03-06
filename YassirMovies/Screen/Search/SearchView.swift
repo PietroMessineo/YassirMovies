@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct SearchView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

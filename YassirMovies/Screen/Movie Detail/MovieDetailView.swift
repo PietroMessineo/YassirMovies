@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct MovieDetailView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

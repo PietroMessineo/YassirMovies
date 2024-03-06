@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ModelPackage
 
 struct MovieThumbnailView: View {
     let item: Items
