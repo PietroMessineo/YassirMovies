@@ -48,6 +48,7 @@
 		CB8F8EFB2B98440400D0F592 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EFA2B98440400D0F592 /* String+Extension.swift */; };
 		CB8F8EFE2B98481200D0F592 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EFD2B98481200D0F592 /* RemoteImageView.swift */; };
 		CB8F8F002B98485E00D0F592 /* SearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EFF2B98485E00D0F592 /* SearchItemView.swift */; };
+		CB8F8F032B9856D400D0F592 /* StringIdentifiable + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8F022B9856D400D0F592 /* StringIdentifiable + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		CB8F8EFA2B98440400D0F592 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		CB8F8EFD2B98481200D0F592 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		CB8F8EFF2B98485E00D0F592 /* SearchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemView.swift; sourceTree = "<group>"; };
+		CB8F8F012B9850AA00D0F592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB8F8F022B9856D400D0F592 /* StringIdentifiable + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringIdentifiable + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,7 @@
 		CB8F8E752B97520700D0F592 /* YassirMovies */ = {
 			isa = PBXGroup;
 			children = (
+				CB8F8F012B9850AA00D0F592 /* Info.plist */,
 				CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */,
 				CB8F8EC42B9783DE00D0F592 /* Components */,
 				CB8F8EAB2B97552800D0F592 /* Extensions */,
@@ -272,6 +276,7 @@
 				CB8F8EAC2B97553500D0F592 /* JSONDecoder+Extension.swift */,
 				CB8F8ED02B978A5700D0F592 /* Date+Extension.swift */,
 				CB8F8EFA2B98440400D0F592 /* String+Extension.swift */,
+				CB8F8F022B9856D400D0F592 /* StringIdentifiable + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				CB8F8EC32B97813F00D0F592 /* HomeView.swift in Sources */,
 				CB8F8EAA2B9752B700D0F592 /* TmdbEndpoint.swift in Sources */,
 				CB8F8EE62B97B21900D0F592 /* DetailHeaderView.swift in Sources */,
+				CB8F8F032B9856D400D0F592 /* StringIdentifiable + Extension.swift in Sources */,
 				CB8F8EE92B97B4E400D0F592 /* MovieDetailInfoView.swift in Sources */,
 				CB8F8EC12B977A1200D0F592 /* TmdbManager.swift in Sources */,
 				CB8F8EE22B97B11E00D0F592 /* DetailBackgroundView.swift in Sources */,
@@ -732,6 +738,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"YassirMovies/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YassirMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -761,6 +768,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"YassirMovies/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YassirMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

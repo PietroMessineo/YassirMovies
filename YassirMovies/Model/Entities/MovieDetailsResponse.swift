@@ -8,7 +8,8 @@
 import Foundation
 
 struct MovieDetailsResponse: Codable {
-    let id: Int
+    let success: Bool?
+    let id: Int?
     let original_title: String?
     let release_date: Date?
     let overview: String?
