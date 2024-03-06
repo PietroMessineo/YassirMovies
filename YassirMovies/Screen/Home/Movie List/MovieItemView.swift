@@ -40,7 +40,7 @@ struct MovieItemView: View {
             if releaseStatus != "Released" {
                 Text(releaseStatus ?? "")
                     .font(.system(size: 14, weight: .medium))
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .padding(EdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 0))
                     .frame(maxWidth: .infinity)
                     .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 20))
