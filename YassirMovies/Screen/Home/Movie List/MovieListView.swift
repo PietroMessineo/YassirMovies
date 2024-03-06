@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MovieListView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

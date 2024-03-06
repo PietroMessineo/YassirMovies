@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct DetailBackgroundView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
-    let posterImage: KFImage?
+    let posterImage: Image?
     
     var body: some View {
         GeometryReader(content: { geometry in

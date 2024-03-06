@@ -6,17 +6,23 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MovieThumbnailView: View {
     let item: Items
     
     var body: some View {
         if let imageUrl = item.poster_path, let url = URL(string: "https://image.tmdb.org/t/p/w500" + imageUrl) {
-            let image = KFImage.url(url)
-            
-            NavigationLink(destination: MovieDetailView(movieId: item.id, posterImage: image) ) {
-                MovieItemView(image: image, item: item)
+            AsyncImage(url: url) { image in
+                NavigationLink(destination: MovieDetailView(movieId: item.id, posterImage: image) ) {
+                    MovieItemView(image: image, item: item)
+                }
+            } placeholder: {
+                RoundedRectangle(cornerRadius: 15)
+                    .fill(.gray)
+                    .overlay {
+                        ProgressView()
+                    }
+                    .frame(width: 105, height: 156)
             }
         } else {
             NavigationLink(destination: MovieDetailView(movieId: item.id, posterImage: nil)) {

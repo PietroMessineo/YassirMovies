@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MovieDetailView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
     
     let movieId: Int
-    let posterImage: KFImage?
+    let posterImage: Image?
     
     @State var shouldCollapse: Bool = false
     @State var selectedTab: MovieDetailTab = .none

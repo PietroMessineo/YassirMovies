@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct MovieItemView: View {
-    let image: KFImage?
+    let image: Image?
     let item: Items
     
     var body: some View {

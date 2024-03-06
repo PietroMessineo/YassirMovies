@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct CastView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct WatchProviderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager

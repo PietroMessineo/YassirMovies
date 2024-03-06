@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct DetailHeaderView: View {
     @EnvironmentObject var tmdbManager: TmdbManager
@@ -14,7 +13,7 @@ struct DetailHeaderView: View {
     
     // Screen width which is passed from GeometryReader is being used for calculate dynamically the horizontal spacing
     let screenWidth: CGFloat
-    let posterImage: KFImage?
+    let posterImage: Image?
     
     var body: some View {
         VStack {
