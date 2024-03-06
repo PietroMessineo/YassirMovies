@@ -33,7 +33,11 @@ struct WatchProviderView: View {
         VStack(alignment: .leading) {
             ForEach(providers) { provider in
                 HStack {
-                    createImageRow(provider: provider)
+                    RemoteImageView(imagePath: provider.logoPath)
+                        .scaledToFill()
+                        .frame(width: 72, height: 72)
+                        .clipShape(Circle())
+                    
                     VStack(alignment: .leading) {
                         Text(provider.providerName)
                             .font(.system(size: 17, weight: .bold))
@@ -51,15 +55,6 @@ struct WatchProviderView: View {
     
     func setSubtitle(providers: [Provider]?, subtitle: String) -> [Provider] {
         providers?.map { var provider = $0; provider.subtitle = subtitle; return provider } ?? []
-    }
-    
-    func createImageRow(provider: Provider) -> some View {
-        let imageUrl = "https://image.tmdb.org/t/p/w500" + (provider.logoPath)
-        return KFImage.url(URL(string: imageUrl))
-            .resizable()
-            .scaledToFill()
-            .frame(width: 72, height: 72)
-            .clipShape(Circle())
     }
     
     func emptyTextView() -> some View {

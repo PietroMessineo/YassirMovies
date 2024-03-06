@@ -13,19 +13,13 @@ struct CarouselItemView: View {
     
     var body: some View {
         Group {
-            if let image = item.item.backdrop_path, let url = URL(string: "https://image.tmdb.org/t/p/w500\(image)") {
-                KFImage(url)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: getCardWidth(), height: getCardHeight())
-                    .cornerRadius(20)
-                    .overlay {
-                        BackdropOverlayView(item: item)
-                    }
-            } else {
-                RoundedRectangle(cornerRadius: 20)
-                    .frame(width: getCardWidth(), height: getCardHeight())
-            }
+            RemoteImageView(imagePath: item.item.backdrop_path)
+                .scaledToFill()
+                .frame(width: getCardWidth(), height: getCardHeight())
+                .cornerRadius(20)
+                .overlay {
+                    BackdropOverlayView(item: item)
+                }
         }
     }
     

@@ -14,6 +14,9 @@ struct RemoteImageView: View {
     var body: some View {
         if let imagePath = imagePath, let url = URL(string: "https://image.tmdb.org/t/p/w500" + imagePath) {
             let image = KFImage.url(url)
+                .placeholder({ progress in
+                    ProgressView()
+                })
             imageView(for: image)
         } else {
             placeholderImage

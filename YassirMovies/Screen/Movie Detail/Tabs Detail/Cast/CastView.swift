@@ -70,13 +70,8 @@ struct CastView: View {
     
     func createCastRow(cast: Person) -> some View {
         HStack {
-            if let imageUrl = cast.profile_path, let url = URL(string: "https://image.tmdb.org/t/p/w500" + imageUrl) {
-                PersonItemView(cast: cast, imageUrl: url)
-                Spacer()
-            } else {
-                PersonItemView(cast: cast, imageUrl: nil)
-                Spacer()
-            }
+            PersonItemView(cast: cast, imagePath: cast.profile_path)
+            Spacer()
         }
     }
 }
