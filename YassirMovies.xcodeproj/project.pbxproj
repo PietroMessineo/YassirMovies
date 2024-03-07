@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB657BA52B9A1FDD003FF3C8 /* ComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CB657BA42B9A1FDD003FF3C8 /* ComponentsPackage */; };
+		CB657BA82B9A1FEF003FF3C8 /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CB657BA72B9A1FEF003FF3C8 /* ModelPackage */; };
 		CB7FE6BF2B989883002D643D /* CustomJsonDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6BE2B989883002D643D /* CustomJsonDecoderTests.swift */; };
 		CB7FE6C12B9898C7002D643D /* DateExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6C02B9898C7002D643D /* DateExtensionsTest.swift */; };
 		CB7FE6D62B98A2FA002D643D /* TmdbManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FE6D52B98A2FA002D643D /* TmdbManagerTests.swift */; };
-		CB7FE6E52B98C99F002D643D /* ComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CB7FE6E42B98C99F002D643D /* ComponentsPackage */; };
-		CB7FE6E82B98CEBF002D643D /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CB7FE6E72B98CEBF002D643D /* ModelPackage */; };
 		CB8F8E772B97520700D0F592 /* YassirMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8E762B97520700D0F592 /* YassirMoviesApp.swift */; };
 		CB8F8E7B2B97520900D0F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7A2B97520900D0F592 /* Assets.xcassets */; };
 		CB8F8E7E2B97520900D0F592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8F8E7D2B97520900D0F592 /* Preview Assets.xcassets */; };
@@ -37,9 +37,6 @@
 		CB8F8EF62B97D06000D0F592 /* BackdropOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF52B97D06000D0F592 /* BackdropOverlayView.swift */; };
 		CB8F8EF92B98414D00D0F592 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EF82B98414D00D0F592 /* SearchView.swift */; };
 		CB8F8F002B98485E00D0F592 /* SearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8F8EFF2B98485E00D0F592 /* SearchItemView.swift */; };
-		CBAB15AB2B98D76A00F9B3AD /* ComponentsPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */; };
-		CBAB15AD2B98D76A00F9B3AD /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15AC2B98D76A00F9B3AD /* ModelPackage */; };
-		CBAB15B12B98D77000F9B3AD /* ModelPackage in Frameworks */ = {isa = PBXBuildFile; productRef = CBAB15B02B98D77000F9B3AD /* ModelPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,8 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB7FE6E52B98C99F002D643D /* ComponentsPackage in Frameworks */,
-				CB7FE6E82B98CEBF002D643D /* ModelPackage in Frameworks */,
+				CB657BA52B9A1FDD003FF3C8 /* ComponentsPackage in Frameworks */,
+				CB657BA82B9A1FEF003FF3C8 /* ModelPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAB15AB2B98D76A00F9B3AD /* ComponentsPackage in Frameworks */,
-				CBAB15AD2B98D76A00F9B3AD /* ModelPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBAB15B12B98D77000F9B3AD /* ModelPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +325,8 @@
 			);
 			name = YassirMovies;
 			packageProductDependencies = (
-				CB7FE6E42B98C99F002D643D /* ComponentsPackage */,
-				CB7FE6E72B98CEBF002D643D /* ModelPackage */,
+				CB657BA42B9A1FDD003FF3C8 /* ComponentsPackage */,
+				CB657BA72B9A1FEF003FF3C8 /* ModelPackage */,
 			);
 			productName = YassirMovies;
 			productReference = CB8F8E732B97520700D0F592 /* YassirMovies.app */;
@@ -353,8 +347,6 @@
 			);
 			name = YassirMoviesTests;
 			packageProductDependencies = (
-				CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */,
-				CBAB15AC2B98D76A00F9B3AD /* ModelPackage */,
 			);
 			productName = YassirMoviesTests;
 			productReference = CB8F8E832B97520900D0F592 /* YassirMoviesTests.xctest */;
@@ -375,7 +367,6 @@
 			);
 			name = YassirMoviesUITests;
 			packageProductDependencies = (
-				CBAB15B02B98D77000F9B3AD /* ModelPackage */,
 			);
 			productName = YassirMoviesUITests;
 			productReference = CB8F8E8D2B97520900D0F592 /* YassirMoviesUITests.xctest */;
@@ -414,8 +405,8 @@
 			);
 			mainGroup = CB8F8E6A2B97520700D0F592;
 			packageReferences = (
-				CB7FE6E32B98C99F002D643D /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */,
-				CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */,
+				CB657BA32B9A1FDD003FF3C8 /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */,
+				CB657BA62B9A1FE7003FF3C8 /* XCRemoteSwiftPackageReference "YassirModelPackage" */,
 			);
 			productRefGroup = CB8F8E742B97520700D0F592 /* Products */;
 			projectDirPath = "";
@@ -817,7 +808,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CB7FE6E32B98C99F002D643D /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */ = {
+		CB657BA32B9A1FDD003FF3C8 /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PietroMessineo/YassirComponentsPackage.git";
 			requirement = {
@@ -825,7 +816,7 @@
 				kind = branch;
 			};
 		};
-		CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */ = {
+		CB657BA62B9A1FE7003FF3C8 /* XCRemoteSwiftPackageReference "YassirModelPackage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PietroMessineo/YassirModelPackage.git";
 			requirement = {
@@ -836,29 +827,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CB7FE6E42B98C99F002D643D /* ComponentsPackage */ = {
+		CB657BA42B9A1FDD003FF3C8 /* ComponentsPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB7FE6E32B98C99F002D643D /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */;
+			package = CB657BA32B9A1FDD003FF3C8 /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */;
 			productName = ComponentsPackage;
 		};
-		CB7FE6E72B98CEBF002D643D /* ModelPackage */ = {
+		CB657BA72B9A1FEF003FF3C8 /* ModelPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
-			productName = ModelPackage;
-		};
-		CBAB15AA2B98D76A00F9B3AD /* ComponentsPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB7FE6E32B98C99F002D643D /* XCRemoteSwiftPackageReference "YassirComponentsPackage" */;
-			productName = ComponentsPackage;
-		};
-		CBAB15AC2B98D76A00F9B3AD /* ModelPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
-			productName = ModelPackage;
-		};
-		CBAB15B02B98D77000F9B3AD /* ModelPackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CB7FE6E62B98CEBF002D643D /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
+			package = CB657BA62B9A1FE7003FF3C8 /* XCRemoteSwiftPackageReference "YassirModelPackage" */;
 			productName = ModelPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
