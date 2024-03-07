@@ -7,7 +7,7 @@
       "location" : "https://github.com/PietroMessineo/YassirComponentsPackage.git",
       "state" : {
         "branch" : "main",
-        "revision" : "50e75d4fc804bd2926dfd37bf4c1a08be8aad835"
+        "revision" : "ed3b65f5dbe36491f741328fb3d2b6fb59334424"
       }
     },
     {
@@ -16,7 +16,7 @@
       "location" : "https://github.com/PietroMessineo/YassirModelPackage.git",
       "state" : {
         "branch" : "main",
-        "revision" : "12e165d7f2735237998d0a4e890554bd70e728a6"
+        "revision" : "f826011e6fdeed671ac5912e16f081b160bcc929"
       }
     }
   ],
