@@ -1,5 +1,4 @@
 {
-  "originHash" : "db1cd73853eb11c3561b2d30540a9cf847c5ddcc84bb1d4596e7a7e5f5e33f7d",
   "pins" : [
     {
       "identity" : "yassircomponentspackage",
@@ -20,5 +19,5 @@
       }
     }
   ],
-  "version" : 3
+  "version" : 2
 }
